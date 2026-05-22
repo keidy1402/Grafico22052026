@@ -1,14 +1,17 @@
-import streamlit as st
-import pandas as pd
 import plotly.express as px
 import requests
+import streamlit as st
+import pandas as pd
 
-# ---------------------------------
-# Ler CSV
-# ---------------------------------
+df = pd.read_csv(
+    "OCORRENCIAS_2026.csv.csv",
+    sep=";",
+    encoding="latin1"
+)
 
-df = pd.read_csv("OCORRENCIAS_2026.csv.csv")
 st.write(df.columns)
+
+st.dataframe(df.head())
 
 # ---------------------------------
 # Agrupar ocorrências
