@@ -3,4 +3,4 @@ plotly
 pandas
 openpyxl
 json
-resquest
+requests
