@@ -1,14 +1,13 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-import json
 import requests
 
 # ---------------------------------
-# Ler Excel
+# Ler CSV
 # ---------------------------------
 
-df = pd.read_excel("OCORRENCIAS_2026.csv.csv")
+df = pd.read_csv("OCORRENCIAS_2026.csv.csv")
 
 # ---------------------------------
 # Agrupar ocorrências
